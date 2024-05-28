@@ -47,8 +47,6 @@ class TiendaController extends Controller
     public function edit($id)
     {
         $productos = productos::findOrFail($id);
-
-
         return view('detalle', compact('productos'));
     }
 
